@@ -34,7 +34,7 @@ syn keyword     goType           uint8 uint16 uint32 uint64
 syn keyword     goType           int8 int16 int32 int64
 syn keyword     goType           float32 float64
 syn keyword     goType           float32 float64
-syn keyword     goType           byte
+syn keyword     goType           byte, bool, error
 syn keyword     goType           uint int float uintptr string
 
 syn keyword     goConcurrent     chan go
@@ -49,9 +49,9 @@ syn keyword     goBif            len make new close closed cap map
 
 " According to the language specification it is not garanteed to stay in the
 " language. See http://golang.org/doc/go_spec.html#Bootstrapping
-syn keyword     goBif            print println panic panicln
+"syn keyword     goBif            Printf Println Panic Panicln
 
-" Commants
+" Comments
 syn keyword     goTodo           contained TODO FIXME XXX
 syn match       goLineComment    "\/\/.*" contains=@Spell,goTodo
 syn match       goCommentSkip    "^[ \t]*\*\($\|[ \t]\+\)"
@@ -77,12 +77,25 @@ syn match       goFloat          display "\(\.[0-9_]\+\)\(e[-+]\=[0-9_]\+\)\=[fl
 
 " Literals
 syn region      goString         start=+L\="+ skip=+\\\\\|\\"+ end=+"+ contains=@Spell
+syn region      goRawString      start=+`+ end=+`+ contains=@Spell
 
 syn match       goSpecial        display contained "\\\(x\x\+\|\o\{1,3}\|.\|$\)"
 syn match       goCharacter      "L\='[^\\]'"
 syn match       goCharacter      "L'[^']*'" contains=goSpecial
 
+"format strings
+syn match       goFormat   /\
+\([^%]\(%%\)*\)\
+    \@<=%[-#0 +]*\
+    \%(\%(\%(\[\d\+\]\)\=\*\)\|\d\+\)\=\
+    \%(\.\%(\%(\%(\[\d\+\]\)\=\*\)\|\d\+\)\=\)\=\
+    \%(\[\d\+\]\)\=[vTtbcdoqxXUeEfFgGsp]/ contained containedin=goString,goRawString
 
+syn cluster     goCharacterGroup    contains=goEscapeOctal,goEscapeC,goEscapeX,goEscapeU,goEscapeBigU
+syn region      goCharacter      start=+'+ skip=+\\\\\|\\'+ end=+'+ contains=@goCharacterGroup
+
+hi def link goCharacter     Character
+hi def link goFormat        Statement
 hi def link goStatement     Statement
 hi def link goClause        Preproc
 hi def link goConditional   Conditional
@@ -105,6 +118,7 @@ hi def link goFloat         Float
 hi def link goOct           Number
 hi def link goOctZero       Number
 hi def link goString        String
+hi def link goRawString     String
 hi def link goSpecial       Special
 hi def link goCharacter     Character
 

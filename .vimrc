@@ -8,3 +8,4 @@ colorscheme monokain
 set nu
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 set tags+=.tags
+au BufNewFile,BufRead,BufReadPost *.psql set syntax=sql
