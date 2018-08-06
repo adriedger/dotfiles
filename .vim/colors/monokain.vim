@@ -1,9 +1,5 @@
-" Sublime-like color theme, modified by Theofilos Petsios
-" Heavily based on the monokai theme for textmate
-" by Wimer Hazenberg and its darker variant 
-" by Hamish Stuart Macpherson
-"
-" To be used in 256 color mode
+" Sublime-like color theme"
+" Andre's version
 
 hi clear
 
@@ -117,4 +113,90 @@ if &t_Co > 255
 	hi TabLineSel 	   ctermbg=DarkGrey
 	" Unselected
 	hi TabLine 	   ctermbg=Black
+end
+if has('gui_running')
+    hi Normal          guifg=White guibg=grey15
+    
+    hi Boolean         guifg=#af5fff
+	hi Character       guifg=#afaf87
+	hi Number          guifg=#af5fff
+	hi String          guifg=#ffd787
+	hi Conditional     guifg=#d7005f               gui=bold
+	hi Constant        guifg=#af5fff               gui=bold
+	hi Cursor          guifg=#000000  guibg=#dadada
+	hi Debug           guifg=#ffd7ff               gui=bold
+	hi Define          guifg=#5fd7ff
+	hi Delimiter       guifg=#626262
+
+	hi DiffAdd                     guibg=#005f87
+	hi DiffChange      guifg=#d7afaf guibg=#4e4e4e
+	hi DiffDelete      guifg=#d70087 guibg=#5f005f
+	hi DiffText                    guibg=#878787 gui=bold
+
+	hi Directory       guifg=#87ff00               gui=bold
+	hi Error           guifg=#ffafff guibg=Black
+	hi ErrorMsg        guifg=#ff00af guibg=#000000    gui=bold
+	hi Exception       guifg=#d70000               gui=bold
+	hi Float           guifg=#af5fff
+	hi FoldColumn      guifg=#5f87af  guibg=#000000
+	hi Folded          guifg=#5f87af  guibg=#000000
+	hi Function        guifg=#87ff00
+	hi Identifier      guifg=#ff8700
+	hi Ignore          guifg=#808080 guibg=#080808
+	hi IncSearch       guifg=#d7ffaf guibg=#000000
+
+	hi Keyword         guifg=#d7005f               gui=bold
+	hi Label           guifg=#ffffaf               gui=none
+	hi Macro           guifg=#d7ffaf
+	hi SpecialKey      guifg=#5fd7ff
+
+	hi MatchParen      guifg=#000000  guibg=#ff8700 gui=bold
+	hi ModeMsg         guifg=#ffffaf
+	hi MoreMsg         guifg=#ffffaf
+	hi Operator        guifg=#d7005f
+
+	hi Comment	   guifg=#808080
+	hi ColorColumn	   guibg=#303030 guibg=black
+	hi Pmenu           guifg=#5fd7ff  guibg=#000000
+	hi PmenuSel                    guibg=#808080
+	hi PmenuSbar                   guibg=#080808
+	hi PmenuThumb      guifg=#5fd7ff
+
+	hi PreCondit       guifg=#afffff	gui=bold
+	hi PreProc         guifg=#afffff
+	hi Question        guifg=#5fd7ff
+	hi Repeat          guifg=#d7005f               gui=bold
+	hi Search          guifg=#dadada guibg=#5f8787
+
+	hi SignColumn      guifg=#87ff00 guibg=#808080
+	hi SpecialChar     guifg=#d7005f               gui=bold
+	hi SpecialComment  guifg=#8a8a8a               gui=bold
+	hi Special         guifg=#5fd7ff  guibg=#080808
+	hi SpecialKey      guifg=#8a8a8a
+
+	hi Statement       guifg=#d7005f               gui=bold
+	hi StatusLine      guifg=#444444 guibg=#dadada
+	hi StatusLineNC    guifg=#808080 guibg=#080808
+	hi StorageClass    guifg=#ff8700
+	hi Structure       guifg=#5fd7ff
+	hi Tag             guifg=#d7005f
+	hi Title           guifg=#d75f00
+	hi Todo            guifg=#ffffff guibg=#080808   gui=bold
+
+	hi Typedef         guifg=#5fd7ff
+	hi Type            guifg=#5fd7ff                gui=none
+	hi Underlined      guifg=#808080               gui=underline
+
+	hi VertSplit       guifg=#808080 guibg=#080808   gui=bold
+	hi VisualNOS                   guibg=#444444
+	hi Visual                      guibg=#808080
+	hi WarningMsg      guifg=#ffffff guibg=#444444   gui=bold
+	hi WildMenu        guifg=#5fd7ff  guibg=#000000
+
+	hi CursorLine                  guibg=#1c1c1c   gui=none
+	hi CursorColumn                guibg=#1c1c1c
+	hi LineNr          guifg=#bcbcbc
+	hi TabLineFill     guifg=Black guibg=Black
+	hi TabLineSel 	   guibg=DarkGrey
+	hi TabLine 	   guibg=Black   
 end
