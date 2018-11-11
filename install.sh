@@ -7,3 +7,4 @@
 cp -r .vim/ ~
 cp .vimrc .inputrc ~
 echo "alias sql='psql -U postgres'" >> ~/.bashrc
+echo "alias stu='ssh driedgera2@students.cs.macewan.ca -X'" >> ~/.bashrc
