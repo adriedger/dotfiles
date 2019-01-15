@@ -155,7 +155,7 @@ if has('gui_running')
 	hi MoreMsg         guifg=#ffffaf
 	hi Operator        guifg=#d7005f
 
-	hi Comment	   guifg=#808080
+	hi Comment	   guifg=#9e9e9e
 	hi ColorColumn	   guibg=#303030 guibg=black
 	hi Pmenu           guifg=#5fd7ff  guibg=#000000
 	hi PmenuSel                    guibg=#808080
