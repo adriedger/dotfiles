@@ -18,4 +18,3 @@ set tags+=.tags
 au BufNewFile,BufRead,BufReadPost *.psql set syntax=sql
 
 set pastetoggle=<F2>
-set mouse=a

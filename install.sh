@@ -7,3 +7,7 @@ cp -r .vim/ ~
 cp .vimrc .inputrc ~
 echo "alias sql='psql -U postgres'" >> ~/.bashrc
 echo "alias stu='ssh driedgera2@students.cs.macewan.ca -X'" >> ~/.bashrc
+echo "alias mirage='mirage &> /dev/null'"
+echo "alias dus='du -sh *'"
+echo "alias dfh='df -h'"
+echo "alias phps='php -S localhost:8000'"
