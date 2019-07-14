@@ -1,0 +1,6 @@
+alias sql='psql -U postgres'
+alias stu='ssh driedgera2@students.cs.macewan.ca -X'
+alias mirage='mirage &> /dev/null'
+alias dus='du -sh *' 
+alias dfh='df -h'
+alias phps='php -S localhost:8000'
