@@ -8,7 +8,8 @@ cp .vimrc .inputrc ~
 cat .bashrc >> ~/.bashrc
 
 #install vim plugins
-cd ./vim/pack/my-plugins/start/
+mkdir -p ~/.vim/pack/my-plugins/start/
+cd ~/.vim/pack/my-plugins/start/
 git clone https://github.com/scrooloose/nerdtree
 git clone https://github.com/airblade/vim-gitgutter
 git clone https://github.com/severin-lemaignan/vim-minimap
