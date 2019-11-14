@@ -8,3 +8,4 @@ alias py='python'
 alias py3='python3'
 #keep vim from being disrupted by ctrl-s and ctrl-q:
 stty -ixon
+alias dusa='du -sch .[!.]* * |sort -h'
