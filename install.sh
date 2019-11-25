@@ -14,4 +14,4 @@ git clone https://github.com/scrooloose/nerdtree
 git clone https://github.com/airblade/vim-gitgutter
 git clone https://github.com/severin-lemaignan/vim-minimap
 git clone https://github.com/itchyny/lightline.vim
-git clone https://github.com/scrooloose/nerdcommenter.git
+git clone https://github.com/tpope/vim-commentary.git
