@@ -19,3 +19,8 @@ au BufNewFile,BufRead,BufReadPost *.psql set syntax=sql
 
 set pastetoggle=<F2>
 set laststatus=2
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_types = 1
+"let g:go_highlight_function_calls = 1
+

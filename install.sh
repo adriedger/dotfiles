@@ -15,3 +15,4 @@ git clone https://github.com/airblade/vim-gitgutter
 git clone https://github.com/severin-lemaignan/vim-minimap
 git clone https://github.com/itchyny/lightline.vim
 git clone https://github.com/tpope/vim-commentary.git
+git clone https://github.com/fatih/vim-go
