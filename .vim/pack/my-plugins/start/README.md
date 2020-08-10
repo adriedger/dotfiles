@@ -1,1 +1,1 @@
-Put plugins here that you want to load up when Vim starts
+Put (clone) plugins here that you want to load when Vim starts up
