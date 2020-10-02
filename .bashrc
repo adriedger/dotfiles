@@ -13,6 +13,4 @@ alias py3='python3'
 #keep vim from being disrupted by ctrl-s and ctrl-q:
 stty -ixon
 alias dusa='du -sch .[!.]* * |sort -h'
-alias artdev2='ssh root@cloudv2.artaugmentedreality.app'
-alias artshopify='ssh root@shopify.artaugmentedreality.app'
 alias artcloud='ssh root@cloud.artaugmentedreality.app'

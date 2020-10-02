@@ -1,0 +1,8 @@
+#add to .local/share/applications
+[Desktop Entry]
+Name=Android Studio
+Exec=/home/adriedger/.local/android-studio/bin/studio.sh
+Terminal=false
+Type=Application
+Icon=/home/adriedger/.local/android-studio/bin/studio.png
+Encoding=UTF-8
