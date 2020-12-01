@@ -4,6 +4,3 @@ sudo /sbin/sysctl -w vm.drop_caches=3
 dd if=/dev/zero of=~/test1.png bs=500M count=1 oflag=dsync
 #test read speed
 sudo hdparm -t /dev/sda1
-
-#to get video info
-ffmpeg -i clipcanvas_14348_PRORES_HQ.mov

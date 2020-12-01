@@ -1,0 +1,5 @@
+#resize keeping the aspect ratio
+ffmpeg -i input.jpg -vf scale=1960:-1 output.png
+
+#to get video info
+ffmpeg -i clipcanvas_14348_PRORES_HQ.mov
