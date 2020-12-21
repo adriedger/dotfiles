@@ -10,3 +10,4 @@ alias py3='python3'
 stty -ixon
 alias dusa='du -sch .[!.]* * |sort -h'
 alias artcloud='ssh root@cloud.artaugmentedreality.app'
+alias pyserver='py -m http.server 8000'
