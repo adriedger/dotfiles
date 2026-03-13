@@ -10,4 +10,4 @@ alias cloud='ssh adriedger@cloud.artaugmentedreality.app'
 alias pyserver='py -m http.server 8000'
 alias vim-update-plugins='ls -d ~/.vim/pack/my-plugins/start/* | xargs -I{} git -C {} pull'
 #AI
-alias openclaw='ssh -N -L 18789:127.0.0.1:18789 adriedger@138.197.161.75 & xdg-open "http://127.0.0.1:18789"'
+alias dashboard='ssh -N -L 18789:127.0.0.1:18789 adriedger@138.197.161.75 & xdg-open "http://127.0.0.1:18789"'
